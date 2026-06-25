@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Splendor O&M — Operação e Manutenção de usinas solares</title>
+<meta name="description" content="Operação e manutenção de usinas solares com tecnologia própria. Engenharia, construção e software (meuWatt e meuPlano) para manter sua usina gerando no máximo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="nav">
+  <a href="#top" aria-label="Splendor O&M — início">
+    <img src="assets/logo-dark.png" alt="Splendor O&M" class="nav__logo nav__logo--dark">
+    <img src="assets/logo-light.png" alt="Splendor O&M" class="nav__logo nav__logo--light">
+  </a>
+  <nav class="nav__links" id="navLinks">
+    <a class="nav__link" href="#servicos">Serviços</a>
+    <a class="nav__link" href="#metodo">Método</a>
+    <a class="nav__link" href="#tecnologia">Tecnologia</a>
+    <a class="nav__link" href="#controle">Controle Remoto</a>
+    <a class="nav__link" href="#quem-somos">Quem Somos</a>
+    <a class="btn btn--primary btn--sm" href="#diagnostico">Agendar diagnóstico</a>
+  </nav>
+  <div class="nav__cta">
+    <a class="btn btn--primary btn--sm" href="#diagnostico">Agendar diagnóstico</a>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============================== HERO (3 variações) ============================== -->
+<div class="heroes" id="heroes">
+
+  <!-- ---------- HERO A: editorial split ---------- -->
+  <section class="heroA" data-hero="a" data-screen-label="Hero A">
+    <div class="container">
+      <div class="heroA__grid">
+        <div class="heroA__text">
+          <span class="eyebrow reveal">Operação e Manutenção · Usinas solares</span>
+          <h1 class="h-display reveal" data-d="1">Operação e Manutenção de usinas solares com <span class="mark">tecnologia própria</span></h1>
+          <p class="lead reveal" data-d="2">Quem projeta, comissiona e constrói usinas sabe exatamente onde elas falham. A Splendor O&M une engenharia, construção e software próprio para manter sua usina gerando no máximo.</p>
+          <div class="heroA__ctas reveal" data-d="3">
+            <a class="btn btn--gold" href="#diagnostico">Agendar diagnóstico gratuito</a>
+            <a class="btn btn--ghost" href="#tecnologia">Conhecer o meuWatt <span class="arr">→</span></a>
+          </div>
+        </div>
+        <div class="heroA__media reveal" data-d="2">
+          <div class="ph" style="aspect-ratio:4/4.5;">
+            <span class="ph__corner">FOTO</span>
+            <span class="ph__tag">[ FOTO ]<br>Usina solar com céu limpo —<br>drone ou ângulo baixo dos trackers/módulos</span>
+          </div>
+          <div class="chip" style="left:-22px; bottom:34px;">
+            <span class="chip__k"><span class="dot"></span> Geração agora</span>
+            <span class="chip__v"><span data-count="1840" data-suffix="" data-dur="1600">0</span> <span class="u">kW</span></span>
+          </div>
+          <div class="chip" style="right:-16px; top:30px;">
+            <span class="chip__k">Disponibilidade</span>
+            <span class="chip__v"><span data-count="100" data-dur="1600">0</span><span class="u">%</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat__num">+<span data-count="200">0</span><span class="u">MW</span></div><div class="hero-stat__label">em projetos básicos</div></div>
+      <div class="hero-stat"><div class="hero-stat__num">+<span data-count="50">0</span><span class="u">MW</span></div><div class="hero-stat__label">em projetos executivos</div></div>
+      <div class="hero-stat"><div class="hero-stat__num">+<span data-count="50">0</span><span class="u">MW</span></div><div class="hero-stat__label">comissionados</div></div>
+      <div class="hero-stat"><div class="hero-stat__num"><span data-count="20">0</span><span class="u">MW</span></div><div class="hero-stat__label">construídos</div></div>
+    </div>
+  </section>
+
+  <!-- ---------- HERO B: dark cinematic ---------- -->
+  <section class="heroB is-active" data-hero="b" data-screen-label="Hero B">
+    <div class="heroB__bg"></div>
+    <div class="heroB__photo ph ph--navy" style="border:0;border-radius:0;">
+      <span class="ph__tag">[ FOTO ] usina · drone</span>
+    </div>
+    <div class="heroB__inner">
+      <div class="container">
+        <span class="eyebrow reveal">Operação e Manutenção · Usinas solares</span>
+        <h1 class="h-display reveal" data-d="1">Operação e Manutenção de usinas solares com <span class="gold-text">tecnologia própria</span></h1>
+        <p class="lead reveal" data-d="2">Quem projeta, comissiona e constrói usinas sabe exatamente onde elas falham. A Splendor O&M une engenharia, construção e software próprio para manter sua usina gerando no máximo.</p>
+        <div class="heroB__ctas reveal" data-d="3">
+          <a class="btn btn--gold" href="#diagnostico">Agendar diagnóstico gratuito</a>
+          <a class="btn btn--on-navy" href="#tecnologia">Conhecer o meuWatt <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="hero-stat__num">+<span data-count="200">0</span><span class="u">MW</span></div><div class="hero-stat__label">em projetos básicos</div></div>
+        <div class="hero-stat"><div class="hero-stat__num">+<span data-count="50">0</span><span class="u">MW</span></div><div class="hero-stat__label">em projetos executivos</div></div>
+        <div class="hero-stat"><div class="hero-stat__num">+<span data-count="50">0</span><span class="u">MW</span></div><div class="hero-stat__label">comissionados</div></div>
+        <div class="hero-stat"><div class="hero-stat__num"><span data-count="20">0</span><span class="u">MW</span></div><div class="hero-stat__label">construídos</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- HERO C: dashboard-forward ---------- -->
+  <section class="heroC" data-hero="c" data-screen-label="Hero C">
+    <div class="container">
+      <div class="heroC__grid">
+        <div class="heroC__text">
+          <span class="eyebrow reveal">Supervisório próprio · meuWatt</span>
+          <h1 class="h-display reveal" data-d="1">Sua usina inteira em <span class="mark">uma só tela</span></h1>
+          <p class="lead reveal" data-d="2">Operação e manutenção com tecnologia própria. Inversores de qualquer fabricante, rede, proteção e até as câmeras de segurança — monitorados por quem projeta, constrói e opera usinas.</p>
+          <div class="heroC__ctas reveal" data-d="3">
+            <a class="btn btn--gold" href="#diagnostico">Agendar diagnóstico gratuito</a>
+            <a class="btn btn--ghost" href="#tecnologia">Conhecer o meuWatt <span class="arr">→</span></a>
+          </div>
+        </div>
+        <div class="heroC__media reveal" data-d="2">
+          <div class="frame">
+            <div class="frame__bar">
+              <div class="frame__dots"><i></i><i></i><i></i></div>
+              <div class="frame__addr">meuwatt.com.br · Usina Ibitinga</div>
+            </div>
+            <img src="assets/print-analise.png" alt="Painel meuWatt — análise gráfica de geração por inversor" class="frame__img frame__img--crop">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat__num">+<span data-count="200">0</span><span class="u">MW</span></div><div class="hero-stat__label">em projetos básicos</div></div>
+      <div class="hero-stat"><div class="hero-stat__num">+<span data-count="50">0</span><span class="u">MW</span></div><div class="hero-stat__label">em projetos executivos</div></div>
+      <div class="hero-stat"><div class="hero-stat__num">+<span data-count="50">0</span><span class="u">MW</span></div><div class="hero-stat__label">comissionados</div></div>
+      <div class="hero-stat"><div class="hero-stat__num"><span data-count="20">0</span><span class="u">MW</span></div><div class="hero-stat__label">construídos</div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================== A DOR ============================== -->
+<section class="section dor" data-screen-label="A dor">
+  <div class="container">
+    <div class="dor__grid">
+      <div class="dor__head reveal">
+        <span class="eyebrow">O problema</span>
+        <h2 class="h-section" style="margin-top:16px;">Sua usina está longe. Os problemas, não.</h2>
+        <p class="lead" style="margin-top:18px;">Usina de geração remota tem um padrão: o integrador entrega, recebe e desaparece. Aí começam as perdas silenciosas.</p>
+        <p class="dor__kicker">Cada dia de subdesempenho é dinheiro que não volta. E a maioria dos donos de usina só descobre <em>na fatura</em>.</p>
+      </div>
+      <div class="dor__list">
+        <div class="dor__item reveal"><span class="dor__idx">01</span><p><b>String desconectada</b> que ninguém percebe por semanas.</p></div>
+        <div class="dor__item reveal" data-d="1"><span class="dor__idx">02</span><p><b>Inversor limitando potência</b> sem ninguém investigar o motivo.</p></div>
+        <div class="dor__item reveal" data-d="2"><span class="dor__idx">03</span><p><b>Câmera de segurança offline</b> há dias, e a empresa de CFTV nem avisou.</p></div>
+        <div class="dor__item reveal" data-d="3"><span class="dor__idx">04</span><p><b>Cabo furtado, usina parada</b>, e o prejuízo correndo enquanto o seguro discute.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PILARES ============================== -->
+<section class="section" data-screen-label="Pilares">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Por que somos diferentes</span>
+      <h2 class="h-section">Engenharia, construção e software — na mesma empresa</h2>
+      <p class="lead">Não somos só uma equipe de manutenção. Operamos a sua usina com quem entende cada etapa dela.</p>
+    </div>
+    <div class="pillars">
+      <article class="pillar reveal"><span class="pillar__bar"></span>
+        <span class="pillar__no">01 — Engenharia</span>
+        <h3>Quem analisa entende de usina</h3>
+        <p>Atuamos desde 2017 em projetos, comissionamento, due diligence e laudos técnicos com ART. Mais de 50 MW comissionados: conhecemos os defeitos de instalação antes de eles virarem prejuízo.</p>
+      </article>
+      <article class="pillar reveal" data-d="1"><span class="pillar__bar"></span>
+        <span class="pillar__no">02 — Construção</span>
+        <h3>Sabemos o que cobrar do EPC</h3>
+        <p>Construímos 20 MW em usinas solares. Quem já construiu sabe o que inspecionar, o que cobrar do EPC e o que realmente importa na manutenção.</p>
+      </article>
+      <article class="pillar reveal" data-d="2"><span class="pillar__bar"></span>
+        <span class="pillar__no">03 — Tecnologia própria</span>
+        <h3>O software é nosso, e evolui</h3>
+        <p>Desenvolvemos o meuWatt e o meuPlano, nossas plataformas de supervisão e gestão de ativos. Não dependemos de portal de fabricante nem de planilha. A tecnologia é nossa, e evolui com a operação.</p>
+      </article>
+    </div>
+    <p class="pillars-note reveal">A Splendor O&M nasce da experiência da <b style="color:var(--ink-2)">Splendor Energia</b> (construção) e da <b style="color:var(--ink-2)">MarchEng Engenharia</b> (projetos e comissionamento).</p>
+  </div>
+</section>
+
+<!-- ============================== SERVIÇOS ============================== -->
+<section class="section section--tight" id="servicos" data-screen-label="Serviços">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">O que fazemos</span>
+      <h2 class="h-section">Operação e manutenção, do alerta à ordem de serviço</h2>
+    </div>
+    <div class="services">
+      <article class="svc reveal">
+        <div class="svc__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h3l2-6 4 12 2-6h7"/></svg></div>
+        <h3>Operação e Monitoramento</h3>
+        <p>Acompanhamento da usina da primeira à última hora de sol, todos os dias, com alertas automáticos 24h. Quando o sistema acusa, nossa central já está investigando.</p>
+        <span class="svc__tag">Alertas 24h</span>
+      </article>
+      <article class="svc reveal" data-d="1">
+        <div class="svc__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.1-2.1 2.7-2.5z"/></svg></div>
+        <h3>Manutenção Preventiva</h3>
+        <p>Plano de manutenção estruturado no meuPlano: inspeções, limpeza, reaperto, termografia e ensaios elétricos com periodicidade definida e rastreabilidade total.</p>
+        <span class="svc__tag">Plano no meuPlano</span>
+      </article>
+      <article class="svc reveal" data-d="2">
+        <div class="svc__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+        <h3>Manutenção Corretiva</h3>
+        <p>Diagnóstico remoto antes do deslocamento. Na maioria dos casos, sabemos o que está errado antes de o técnico sair da base, e chegamos com a peça certa.</p>
+        <span class="svc__tag">Diagnóstico remoto</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== MÉTODO ============================== -->
+<section class="section method" id="metodo" data-screen-label="Método">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">O método</span>
+      <h2 class="h-section">Como assumimos a sua usina</h2>
+      <p class="lead">Cinco passos do primeiro contato à operação contínua — sem zona cinzenta.</p>
+    </div>
+    <div class="method__steps">
+      <div class="step reveal"><div class="step__no">PASSO<b>01</b></div><div class="step__body"><h3>Diagnóstico técnico</h3><p>Visita de inspeção com checklist visual completo. Cortesia, sem compromisso.</p></div></div>
+      <div class="step reveal"><div class="step__no">PASSO<b>02</b></div><div class="step__body"><h3>Plano de operação</h3><p>Com o diagnóstico em mãos, montamos o plano de manutenção da usina no meuPlano: o que fazer, quando e por quê.</p></div></div>
+      <div class="step reveal"><div class="step__no">PASSO<b>03</b></div><div class="step__body"><h3>Conexão ao meuWatt</h3><p>Integramos inversores, rede e câmeras ao nosso supervisório, com acesso remoto seguro via VPN.</p></div></div>
+      <div class="step reveal"><div class="step__no">PASSO<b>04</b></div><div class="step__body"><h3>Operação contínua</h3><p>Monitoramento durante todo o período de geração, alertas automáticos 24h, manutenções executadas conforme o plano.</p></div></div>
+      <div class="step reveal"><div class="step__no">PASSO<b>05</b></div><div class="step__body"><h3>Relatório mensal</h3><p>Relatório profissional de desempenho: geração, disponibilidade, ocorrências, ações executadas e pendências. Você sabe exatamente o que aconteceu na sua usina.</p></div></div>
+    </div>
+    <p class="method__note reveal"><b>Precisa de mais profundidade?</b> Realizamos ensaios elétricos completos (curva I-V, resistência de isolamento, termografia) por valor simbólico na contratação do diagnóstico.</p>
+  </div>
+</section>
+
+<!-- ============================== COMPARAÇÃO ============================== -->
+<section class="section compare" data-screen-label="Comparação">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow--on-navy">Anti-objeção de preço</span>
+      <h2 class="h-section">O&M não é tudo igual</h2>
+      <p class="lead">Antes de comparar preço, compare o que está incluso.</p>
+    </div>
+    <div class="ctable reveal" data-d="1">
+      <div class="ctable__head">
+        <div>O que você recebe</div>
+        <div>O&amp;M comum</div>
+        <div class="col-spl">Splendor O&amp;M</div>
+      </div>
+      <div class="crow"><div class="feat">Limpeza e roçada</div><div class="common"><svg class="ic ic--yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Sim</div><div class="spl"><svg class="ic ic--yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Sim</div></div>
+      <div class="crow"><div class="feat">Atendimento a chamados</div><div class="common"><svg class="ic ic--yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Sim</div><div class="spl"><svg class="ic ic--yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Sim</div></div>
+      <div class="crow"><div class="feat">Supervisório próprio multi-fabricante</div><div class="common"><svg class="ic ic--no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg> Não</div><div class="spl"><span class="v">meuWatt</span></div></div>
+      <div class="crow"><div class="feat">Gestão de ativo com histórico completo</div><div class="common">Planilha, quando tem</div><div class="spl"><span class="v">meuPlano</span></div></div>
+      <div class="crow"><div class="feat">Monitoramento do status do CFTV</div><div class="common"><svg class="ic ic--no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg> Não</div><div class="spl"><svg class="ic ic--yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Sim</div></div>
+      <div class="crow"><div class="feat">Acesso remoto seguro via VPN</div><div class="common"><svg class="ic ic--no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg> Não</div><div class="spl"><svg class="ic ic--yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Sim</div></div>
+      <div class="crow"><div class="feat">Parametrização remota de inversores e relés</div><div class="common"><svg class="ic ic--no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg> Não</div><div class="spl"><svg class="ic ic--yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Sim</div></div>
+      <div class="crow"><div class="feat">Relatório mensal profissional</div><div class="common">PDF genérico</div><div class="spl"><span class="v">Relatório de engenharia</span></div></div>
+      <div class="crow"><div class="feat">Responsável técnico com ART</div><div class="common">Raramente</div><div class="spl"><span class="v">Sempre</span></div></div>
+      <div class="crow"><div class="feat">Plano de manutenção estruturado</div><div class="common"><svg class="ic ic--no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg> Não</div><div class="spl"><svg class="ic ic--yes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Sim</div></div>
+    </div>
+    <p class="compare__foot reveal">O barato de quem só apaga incêndio custa caro em <em>geração perdida</em>.</p>
+  </div>
+</section>
+
+<!-- ============================== TECNOLOGIA ============================== -->
+<section class="section tech" id="tecnologia" data-screen-label="Tecnologia">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow--on-navy">Nossas plataformas</span>
+      <h2 class="h-section">Tecnologia desenvolvida por quem opera usinas</h2>
+    </div>
+
+    <!-- meuWatt -->
+    <div class="product">
+      <div class="product__text reveal">
+        <div class="brandline"><h3>meuWatt</h3><span class="dotcom">SUPERVISÓRIO</span></div>
+        <p class="product__sub">Supervisório completo da usina. Não só do inversor.</p>
+        <p>O portal do fabricante mostra o inversor. O meuWatt supervisiona a usina inteira:</p>
+        <ul class="flist">
+          <li><svg class="fdot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span><b>Inversores de qualquer fabricante</b> em uma única tela.</span></li>
+          <li><svg class="fdot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span>Status da <b>rede de comunicação</b> e dos equipamentos.</span></li>
+          <li><svg class="fdot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span>Status das <b>câmeras de segurança</b>: se o CFTV cair, você fica sabendo antes do ladrão.</span></li>
+          <li><svg class="fdot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span><b>Alarmes inteligentes</b> com escalonamento.</span></li>
+          <li><svg class="fdot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span><b>Histórico</b> e análise de desempenho.</span></li>
+        </ul>
+        <div class="callout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          <span>Com o monitoramento de CFTV, o meuWatt <b style="color:#fff">audita a empresa de segurança</b> da sua usina. Câmera offline deixa de passar despercebida.</span>
+        </div>
+        <div class="product__cta"><a class="tlink" href="#diagnostico">Ver o meuWatt em detalhe <span class="arr">→</span></a></div>
+      </div>
+      <div class="product__media reveal" data-d="1">
+        <div class="frame">
+          <div class="frame__bar"><div class="frame__dots"><i></i><i></i><i></i></div><div class="frame__addr">meuWatt · Análise Gráfica</div></div>
+          <img src="assets/print-analise.png" alt="Dashboard do meuWatt — potência por inversor" class="frame__img">
+        </div>
+        <div class="gallery">
+          <figure><div class="frame"><img src="assets/print-estacao.png" alt="Estação meteorológica no meuWatt" class="frame__img"></div><figcaption>Estação meteorológica</figcaption></figure>
+          <figure><div class="frame"><img src="assets/print-rele.png" alt="Relé de proteção no meuWatt" class="frame__img"></div><figcaption>Relé de proteção</figcaption></figure>
+          <figure><div class="frame"><img src="assets/print-ucs.png" alt="Disponibilidade por UC no meuWatt" class="frame__img"></div><figcaption>Disponibilidade por UC</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech__divider"></div>
+
+    <!-- meuPlano -->
+    <div class="product product--rev">
+      <div class="product__text reveal">
+        <div class="brandline"><h3>meuPlano</h3><span class="dotcom">GESTÃO DE ATIVO</span></div>
+        <p class="product__sub">Gestão de ativo de verdade, do plano à ordem de serviço.</p>
+        <ul class="flist">
+          <li><svg class="fdot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span><b>Plano de manutenção</b> com periodicidade e checklist.</span></li>
+          <li><svg class="fdot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span><b>Ordens de serviço</b> com fotos, registros e assinatura em campo.</span></li>
+          <li><svg class="fdot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span><b>Histórico completo</b> de tudo que já foi feito na usina.</span></li>
+          <li><svg class="fdot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span><b>Registro de ocorrências</b> com linha do tempo.</span></li>
+        </ul>
+        <div class="product__cta"><a class="tlink" href="#diagnostico">Ver o meuPlano em detalhe <span class="arr">→</span></a></div>
+      </div>
+      <div class="product__media reveal" data-d="1" style="display:flex;justify-content:center;gap:20px;align-items:center;">
+        <div class="phone">
+          <div class="phone__screen ph ph--navy" style="border-radius:26px;">
+            <div class="phone__notch"></div>
+            <span class="ph__tag" style="max-width:80%;">[ PRINT ]<br>OS do meuPlano no celular<br>— técnico em campo</span>
+          </div>
+        </div>
+        <div class="frame" style="flex:1;max-width:300px;">
+          <div class="frame__bar"><div class="frame__dots"><i></i><i></i><i></i></div><div class="frame__addr">meuWatt · Mapa da Planta</div></div>
+          <img src="assets/print-mapa.png" alt="Mapa da planta no meuWatt" class="frame__img" style="height:300px;object-fit:cover;object-position:top center;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTROLE REMOTO ============================== -->
+<section class="section" id="controle" data-screen-label="Controle Remoto">
+  <div class="container">
+    <div class="remote__grid">
+      <div class="remote__text reveal">
+        <span class="eyebrow">Controle remoto</span>
+        <h2 class="h-section" style="margin-top:16px;">Especialistas em controle remoto de usinas</h2>
+        <p class="lead" style="margin-top:18px;">Cada usina sob nossa operação é conectada por VPN dedicada à nossa central. Acesso seguro e criptografado a inversores, relés de proteção, dataloggers e câmeras, de qualquer lugar.</p>
+        <ul class="remote__list">
+          <li><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span>Diagnóstico remoto antes de deslocar equipe.</span></li>
+          <li><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span>Parametrização de inversores e relés de proteção sem visita.</span></li>
+          <li><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span>Religamento e ajustes operacionais em minutos, não em dias.</span></li>
+          <li><svg class="chk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><span>Infraestrutura que funciona até em sites com internet via satélite.</span></li>
+        </ul>
+      </div>
+      <div class="remote__diagram reveal" data-d="1">
+        <div class="diagram">
+          <div class="diagram__title"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Arquitetura de conexão segura</div>
+          <div class="dgrid">
+            <div class="dnode">
+              <div class="dnode__h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M3 9h18M8 20h8M12 16v4"/></svg> Usina</div>
+              <div class="dnode__items">
+                <span class="dpill"><span class="s"></span> Inversores</span>
+                <span class="dpill"><span class="s"></span> Relés de proteção</span>
+                <span class="dpill"><span class="s"></span> Dataloggers</span>
+                <span class="dpill"><span class="s"></span> Câmeras CFTV</span>
+              </div>
+            </div>
+            <div class="dconn">
+              <div class="dconn__line"></div>
+              <div class="dconn__lock"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+              <div class="dconn__lbl">VPN dedicada</div>
+              <div class="dconn__line"></div>
+            </div>
+            <div class="dnode dnode--central">
+              <div class="dnode__h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg> Central Splendor</div>
+              <div class="dnode__items">
+                <span class="dpill"><span class="s"></span> Monitoramento 24h</span>
+                <span class="dpill"><span class="s"></span> Parametrização remota</span>
+                <span class="dpill"><span class="s"></span> Alarmes & escalonamento</span>
+                <span class="dpill"><span class="s"></span> Relatórios de engenharia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== QUEM SOMOS ============================== -->
+<section class="section about" id="quem-somos" data-screen-label="Quem Somos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Quem somos</span>
+      <h2 class="h-section">Quem opera a sua usina</h2>
+    </div>
+    <div class="about__grid">
+      <article class="who reveal">
+        <div class="who__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4 7l8 4 8-4-8-4zM4 7v6l8 4 8-4V7M8 14v4l4 2 4-2v-4"/></svg></div>
+        <h3>Equipe de Engenharia</h3>
+        <p>Engenheiros com registro no CREA, experiência em projeto, comissionamento e laudos. Quem analisa o desempenho da sua usina entende de usina, não só de software.</p>
+      </article>
+      <article class="who reveal" data-d="1">
+        <div class="who__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M2 9h20M6 21h12"/></svg></div>
+        <h3>Central de Monitoramento</h3>
+        <p>Equipe dedicada acompanhando o portfólio da primeira à última hora de geração, com procedimentos definidos de resposta a alarme.</p>
+      </article>
+    </div>
+    <div class="about__media reveal" data-d="1">
+      <div class="ph">
+        <span class="ph__corner">FOTO</span>
+        <span class="ph__tag">[ FOTO ] equipe em campo com EPI / central de monitoramento</span>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="tl reveal"><div class="tl__year">2017</div><div class="tl__txt">Início da MarchEng Engenharia.</div></div>
+      <div class="tl reveal" data-d="1"><div class="tl__year">2019–2024</div><div class="tl__txt">+200 MW projetados, +50 MW comissionados.</div></div>
+      <div class="tl reveal" data-d="2"><div class="tl__year">Splendor</div><div class="tl__txt">20 MW construídos pela Splendor Energia.</div></div>
+      <div class="tl reveal" data-d="3"><div class="tl__year">2025</div><div class="tl__txt">Nasce a Splendor O&M.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA FINAL ============================== -->
+<section class="section cta" id="diagnostico" data-screen-label="CTA Diagnóstico">
+  <div class="container">
+    <div class="cta__inner">
+      <div class="cta__text reveal">
+        <span class="eyebrow">Diagnóstico gratuito</span>
+        <h2 class="h-section">Comece com um diagnóstico gratuito</h2>
+        <p class="lead">Visita técnica de inspeção com checklist visual completo da sua usina. Sem custo, sem compromisso. Você recebe a avaliação e decide o que fazer com ela.</p>
+        <div class="cta__trust">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Checklist visual completo</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Responsável técnico com ART</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> Sem compromisso</span>
+        </div>
+      </div>
+      <div class="reveal" data-d="1">
+        <form class="form" id="diagForm" novalidate>
+          <div class="form__fields" id="formFields">
+            <div class="form__row"><label for="nome">Nome</label><input id="nome" name="nome" type="text" placeholder="Seu nome" required></div>
+            <div class="form__row"><label for="zap">WhatsApp</label><input id="zap" name="zap" type="tel" placeholder="(00) 00000-0000" required></div>
+            <div class="form__row two">
+              <div class="form__row" style="margin:0;"><label for="cidade">Cidade da usina</label><input id="cidade" name="cidade" type="text" placeholder="Cidade / UF" required></div>
+              <div class="form__row" style="margin:0;"><label for="pot">Potência (kWp)</label><input id="pot" name="pot" type="text" placeholder="ex. 1.500" required></div>
+            </div>
+            <button class="btn btn--gold" type="submit">Agendar diagnóstico</button>
+            <p class="form__hint">Resposta em até 1 dia útil. Seus dados não são compartilhados.</p>
+          </div>
+          <div class="form__ok" id="formOk">
+            <div class="badge"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg></div>
+            <h4>Solicitação recebida</h4>
+            <p>Em breve nossa equipe entra em contato pelo WhatsApp para agendar a visita.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo-light.png" alt="Splendor O&M" class="footer__logo">
+        <p class="footer__desc">Operação e manutenção de usinas solares com tecnologia própria. Uma empresa do ecossistema Splendor Energia e MarchEng Engenharia.</p>
+      </div>
+      <div>
+        <h5>Plataformas</h5>
+        <div class="footer__links">
+          <a href="#tecnologia">meuWatt</a>
+          <a href="#tecnologia">meuPlano</a>
+          <a href="#controle">Controle remoto</a>
+        </div>
+      </div>
+      <div>
+        <h5>Empresa</h5>
+        <div class="footer__links">
+          <a href="#servicos">Serviços</a>
+          <a href="#metodo">Método</a>
+          <a href="#quem-somos">Quem somos</a>
+          <a href="#diagnostico">Agendar diagnóstico</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>Splendor O&amp;M Ltda. · CNPJ 00.000.000/0001-00 · Cidade/SP</span>
+      <span>Política de privacidade</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a class="wa" href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <span class="wa__ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.82 9.82 0 0 0 1.51 5.26l-.999 3.648 3.978-1.043zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></span>
+  <span class="wa__txt">Falar no WhatsApp</span>
+</a>
+
+<!-- Hero switcher -->
+<div class="heroswitch" id="heroswitch" role="group" aria-label="Escolher versão do hero">
+  <span class="heroswitch__lbl">Hero</span>
+  <button data-go="a">A</button>
+  <button data-go="b" class="active">B</button>
+  <button data-go="c">C</button>
+</div>
+
+<script src="main.js"></script>
+<template id="__bundler_thumbnail">
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" fill="#0B1626"/>
+    <rect x="30" y="34" width="9" height="32" rx="2" fill="#C49A5B"/>
+    <rect x="44" y="34" width="6" height="32" rx="2" fill="#C49A5B"/>
+    <rect x="55" y="34" width="4" height="32" rx="2" fill="#C49A5B"/>
+    <circle cx="50" cy="76" r="3" fill="#E0A33D"/>
+  </svg>
+</template>
+
+</body>
+</html>

@@ -29,6 +29,7 @@ front/dist/
 front/dist-ssr/
 *.local
 .vite/
+*.tsbuildinfo
 
 # ----- Logs -----
 logs/
