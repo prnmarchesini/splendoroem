@@ -1,0 +1,50 @@
+# ----- Credenciais e segredos (NUNCA versionar) -----
+Acessos.txt
+.env
+.env.*
+!.env.example
+
+# ----- Python / FastAPI (back) -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# ----- Node / Vite / React (front) -----
+node_modules/
+.pnp
+.pnp.js
+front/dist/
+front/dist-ssr/
+*.local
+.vite/
+
+# ----- Logs -----
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ----- Editores / SO -----
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
