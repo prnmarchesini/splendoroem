@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+/* Tokens do design expostos como utilitários Tailwind (@theme).
+   A fonte da verdade visual continua em styles/design.css (:root + classes). */
+@theme {
+  --color-paper: #f5f2ec;
+  --color-paper-2: #ece7dd;
+  --color-paper-card: #fbfaf6;
+  --color-ink: #16181c;
+  --color-ink-2: #4a4e55;
+  --color-ink-3: #878b91;
+  --color-navy: #0b1626;
+  --color-navy-2: #0f1e33;
+  --color-navy-3: #15263e;
+  --color-on-navy: #eaf0f7;
+  --color-on-navy-2: #93a2b5;
+  --color-on-navy-3: #5e708a;
+  --color-gold: oklch(0.66 0.094 72);
+  --color-gold-bright: oklch(0.8 0.125 75);
+  --color-green: oklch(0.78 0.1 150);
+  --color-red: oklch(0.64 0.16 25);
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* CSS autoral do design (portado verbatim). Importado por último para
+   que as classes do design prevaleçam sobre o preflight do Tailwind. */
+@import "./styles/design.css";
