@@ -7,12 +7,14 @@ import Servicos from "./components/sections/Servicos";
 import Metodo from "./components/sections/Metodo";
 import Comparacao from "./components/sections/Comparacao";
 import Tecnologia from "./components/sections/Tecnologia";
+import MeuPlano from "./components/sections/MeuPlano";
 import ControleRemoto from "./components/sections/ControleRemoto";
 import QuemSomos from "./components/sections/QuemSomos";
 import CtaFinal from "./components/sections/CtaFinal";
 import Footer from "./components/Footer";
 import WhatsappFloat from "./components/WhatsappFloat";
 import HeroSwitch from "./components/HeroSwitch";
+import Lightbox from "./components/Lightbox";
 
 export default function App() {
   useSplendorInteractions();
@@ -28,10 +30,12 @@ export default function App() {
         <Metodo />
         <Comparacao />
         <Tecnologia />
+        <MeuPlano />
         <ControleRemoto />
         <QuemSomos />
         <CtaFinal />
       </main>
+      <Lightbox />
       <Footer />
       <WhatsappFloat />
       <HeroSwitch />

@@ -1,4 +1,6 @@
-const STEPS = [
+type Step = { no: string; title: string; text: string; link?: { href: string; label: string } };
+
+const STEPS: Step[] = [
   {
     no: "01",
     title: "Diagnóstico técnico",
@@ -23,6 +25,7 @@ const STEPS = [
     no: "05",
     title: "Relatório mensal",
     text: "Relatório profissional de desempenho: geração, disponibilidade, ocorrências, ações executadas e pendências. Você sabe exatamente o que aconteceu na sua usina.",
+    link: { href: "#relatorios", label: "Ver exemplos de relatório →" },
   },
 ];
 
@@ -46,6 +49,11 @@ export default function Metodo() {
               <div className="step__body">
                 <h3>{s.title}</h3>
                 <p>{s.text}</p>
+                {s.link && (
+                  <a className="minilink" href={s.link.href}>
+                    {s.link.label}
+                  </a>
+                )}
               </div>
             </div>
           ))}

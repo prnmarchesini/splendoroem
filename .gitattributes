@@ -1,0 +1,9 @@
+* text=auto
+
+# Binários: nunca aplicar conversão de fim de linha (corromperia o arquivo).
+*.pdf  binary
+*.docx binary
+*.rar  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary

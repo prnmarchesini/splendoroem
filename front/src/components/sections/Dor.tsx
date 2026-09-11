@@ -9,8 +9,8 @@ export default function Dor() {
               Sua usina está longe. Os problemas, não.
             </h2>
             <p className="lead" style={{ marginTop: "18px" }}>
-              Usina de geração remota tem um padrão: o integrador entrega, recebe e desaparece. Aí
-              começam as perdas silenciosas.
+              Usina de geração remota segue um padrão: depois da entrega, o acompanhamento vai
+              rareando. E é aí que as perdas começam a acontecer em silêncio.
             </p>
             <p className="dor__kicker">
               Cada dia de subdesempenho é dinheiro que não volta. E a maioria dos donos de usina só

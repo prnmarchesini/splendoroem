@@ -4,9 +4,17 @@ type Cell =
   | { kind: "yes" }
   | { kind: "no" }
   | { kind: "text"; label: string }
-  | { kind: "v"; label: string };
+  | { kind: "v"; label: string; link?: { href: string; label: string } };
 
-const ROWS: { feat: string; common: Cell; spl: Cell }[] = [
+type Row = {
+  feat: string;
+  /** Selo "em desenvolvimento" ao lado do item. */
+  roadmap?: boolean;
+  common: Cell;
+  spl: Cell;
+};
+
+const ROWS: Row[] = [
   { feat: "Limpeza e roçada", common: { kind: "yes" }, spl: { kind: "yes" } },
   { feat: "Atendimento a chamados", common: { kind: "yes" }, spl: { kind: "yes" } },
   {
@@ -19,7 +27,12 @@ const ROWS: { feat: string; common: Cell; spl: Cell }[] = [
     common: { kind: "text", label: "Planilha, quando tem" },
     spl: { kind: "v", label: "meuPlano" },
   },
-  { feat: "Monitoramento do status do CFTV", common: { kind: "no" }, spl: { kind: "yes" } },
+  {
+    feat: "Monitoramento do status do CFTV",
+    roadmap: true,
+    common: { kind: "no" },
+    spl: { kind: "yes" },
+  },
   { feat: "Acesso remoto seguro via VPN", common: { kind: "no" }, spl: { kind: "yes" } },
   {
     feat: "Parametrização remota de inversores e relés",
@@ -29,7 +42,11 @@ const ROWS: { feat: string; common: Cell; spl: Cell }[] = [
   {
     feat: "Relatório mensal profissional",
     common: { kind: "text", label: "PDF genérico" },
-    spl: { kind: "v", label: "Relatório de engenharia" },
+    spl: {
+      kind: "v",
+      label: "Relatório de engenharia",
+      link: { href: "#relatorios", label: "ver exemplos em PDF →" },
+    },
   },
   {
     feat: "Responsável técnico com ART",
@@ -56,7 +73,16 @@ function renderCell(cell: Cell) {
     case "text":
       return cell.label;
     case "v":
-      return <span className="v">{cell.label}</span>;
+      return (
+        <>
+          <span className="v">{cell.label}</span>
+          {cell.link && (
+            <a className="minilink" href={cell.link.href}>
+              {cell.link.label}
+            </a>
+          )}
+        </>
+      );
   }
 }
 
@@ -77,7 +103,10 @@ export default function Comparacao() {
           </div>
           {ROWS.map((row) => (
             <div className="crow" key={row.feat}>
-              <div className="feat">{row.feat}</div>
+              <div className="feat">
+                {row.feat}{" "}
+                {row.roadmap && <span className="roadmap roadmap--ink">em desenvolvimento</span>}
+              </div>
               <div className="common">{renderCell(row.common)}</div>
               <div className="spl">{renderCell(row.spl)}</div>
             </div>

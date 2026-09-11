@@ -4,7 +4,9 @@ export default function Pilares() {
       <div className="container">
         <div className="section-head reveal">
           <span className="eyebrow">Por que somos diferentes</span>
-          <h2 className="h-section">Engenharia, construção e software — na mesma empresa</h2>
+          <h2 className="h-section">
+            Engenharia, construção, software e O&amp;M — na mesma empresa
+          </h2>
           <p className="lead">
             Não somos só uma equipe de manutenção. Operamos a sua usina com quem entende cada etapa
             dela.
@@ -26,7 +28,7 @@ export default function Pilares() {
             <span className="pillar__no">02 — Construção</span>
             <h3>Sabemos o que cobrar do EPC</h3>
             <p>
-              Construímos 20 MW em usinas solares. Quem já construiu sabe o que inspecionar, o que
+              Construímos 30 MW em usinas solares. Quem já construiu sabe o que inspecionar, o que
               cobrar do EPC e o que realmente importa na manutenção.
             </p>
           </article>

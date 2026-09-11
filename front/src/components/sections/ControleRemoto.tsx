@@ -9,7 +9,7 @@ const FEATURES = [
 
 const USINA = ["Inversores", "Relés de proteção", "Dataloggers", "Câmeras CFTV"];
 const CENTRAL = [
-  "Monitoramento 24h",
+  "Monitoramento 12/7",
   "Parametrização remota",
   "Alarmes & escalonamento",
   "Relatórios de engenharia",

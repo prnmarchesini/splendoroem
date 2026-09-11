@@ -8,7 +8,8 @@ export default function Nav() {
       <nav className="nav__links" id="navLinks">
         <a className="nav__link" href="#servicos">Serviços</a>
         <a className="nav__link" href="#metodo">Método</a>
-        <a className="nav__link" href="#tecnologia">Tecnologia</a>
+        <a className="nav__link" href="#tecnologia">meuWatt</a>
+        <a className="nav__link" href="#meuplano">meuPlano</a>
         <a className="nav__link" href="#controle">Controle Remoto</a>
         <a className="nav__link" href="#quem-somos">Quem Somos</a>
         <a className="btn btn--primary btn--sm" href="#diagnostico">Agendar diagnóstico</a>

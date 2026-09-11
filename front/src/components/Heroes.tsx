@@ -24,10 +24,17 @@ function HeroStats() {
       </div>
       <div className="hero-stat">
         <div className="hero-stat__num">
-          <span data-count="20">0</span>
+          +<span data-count="30">0</span>
           <span className="u">MW</span>
         </div>
         <div className="hero-stat__label">construídos</div>
+      </div>
+      <div className="hero-stat">
+        <div className="hero-stat__num">
+          +<span data-count="20">0</span>
+          <span className="u">MW</span>
+        </div>
+        <div className="hero-stat__label">usinas em operação</div>
       </div>
     </div>
   );

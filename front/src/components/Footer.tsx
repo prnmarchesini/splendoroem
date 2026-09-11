@@ -14,8 +14,7 @@ export default function Footer() {
             <h5>Plataformas</h5>
             <div className="footer__links">
               <a href="#tecnologia">meuWatt</a>
-              <a href="#tecnologia">meuPlano</a>
-              <a href="#controle">Controle remoto</a>
+              <a href="#meuplano">meuPlano</a>
             </div>
           </div>
           <div>

@@ -1,7 +1,7 @@
 const TIMELINE = [
   { year: "2017", txt: "Início da MarchEng Engenharia." },
   { year: "2019–2024", txt: "+200 MW projetados, +50 MW comissionados." },
-  { year: "Splendor", txt: "20 MW construídos pela Splendor Energia." },
+  { year: "Splendor", txt: "30 MW construídos pela Splendor Energia." },
   { year: "2025", txt: "Nasce a Splendor O&M." },
 ];
 
