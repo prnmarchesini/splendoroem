@@ -51,4 +51,4 @@ Thumbs.db
 *.sln
 
 # ----- Material de origem (imagens/PDFs brutos, fora do git) -----
-Assets/
+/Assets/
