@@ -8,9 +8,4 @@ export default defineConfig({
   server: {
     port: 5173,
   },
-  // `vite preview` é usado no Railway para servir o build estático;
-  // libera os hosts *.railway.app (e custom domains) no healthcheck/produção.
-  preview: {
-    allowedHosts: true,
-  },
 });

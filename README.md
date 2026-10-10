@@ -143,56 +143,17 @@ As rotas protegidas exigem `Authorization: Bearer <access_token do Supabase>`.
 
 ---
 
-## Deploy no Railway (3 serviços)
+## Deploy (Coolify)
 
-Crie **três serviços** no mesmo projeto Railway, apontando para subpastas diferentes
-deste repositório. Defina o **Root Directory** de cada um e as variáveis abaixo.
+Três apps no Coolify, cada um com o `Dockerfile` da própria pasta (Base Directory
+`/back`, `/front`, `/adm`). Push na `main` publica sozinho pelo webhook do GitHub.
 
-> Deploy pelo Railway **pode** ser executado a partir deste repositório: o CLI já está
-> instalado e o project token fica em `back/.env` (`RAILWAY_TOKEN`). Veja
-> [`CLAUDE.md`](CLAUDE.md) para as regras do projeto.
+- **`back`** (porta 8000, health em `/health`): `SUPABASE_URL`,
+  `SUPABASE_SERVICE_ROLE_KEY`, `CORS_ORIGINS` (URLs do `front` e do `adm`, separadas
+  por vírgula), `ENVIRONMENT=production` e, opcional, `ADMIN_EMAILS`.
+- **`front`** e **`adm`** (nginx, porta 80): `VITE_API_URL` (URL do `back`),
+  `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`, marcadas como variáveis **de build**
+  — ao mudá-las, rebuilde.
 
-### Serviço `back` (FastAPI)
-
-- **Root Directory:** `back`
-- **Build:** `pip install -r requirements.txt`
-- **Start:** `uvicorn main:app --host 0.0.0.0 --port $PORT`
-- **Variáveis:**
-  - `SUPABASE_URL`
-  - `SUPABASE_SERVICE_ROLE_KEY`
-  - `CORS_ORIGINS` → URLs públicas dos serviços `front` **e** `adm`, separadas por vírgula
-    (ex.: `https://splendor-front.up.railway.app,https://splendor-adm.up.railway.app`)
-  - (opcional) `ADMIN_EMAILS` → e-mails autorizados no painel, separados por vírgula
-  - (opcional) `APP_NAME`, `ENVIRONMENT=production`
-
-### Serviço `front` (Vite/React — estático)
-
-- **Root Directory:** `front`
-- **Build:** `npm install && npm run build` (gera `dist/`)
-- **Start:** `npm run preview -- --host 0.0.0.0 --port $PORT`
-- **Variáveis** (lidas em **tempo de build** — defina-as antes do build):
-  - `VITE_API_URL` → URL pública do serviço `back`
-  - `VITE_SUPABASE_URL`
-  - `VITE_SUPABASE_ANON_KEY`
-
-### Serviço `adm` (painel — Vite/React, estático)
-
-- **Root Directory:** `adm`
-- **Build:** `npm install && npm run build`
-- **Start:** `npm run preview -- --host 0.0.0.0 --port $PORT`
-- **Variáveis** (lidas em **tempo de build**):
-  - `VITE_API_URL` → URL pública do serviço `back`
-  - `VITE_SUPABASE_URL`
-  - `VITE_SUPABASE_ANON_KEY`
-
-Use o domínio temporário gerado pelo Railway (`*.up.railway.app`) e copie-o para o
-`CORS_ORIGINS` do serviço `back`. O painel manda `noindex, nofollow` no HTML, então
-não é indexado por buscadores — mas isso não é controle de acesso: a proteção real é
-o login do Supabase Auth somado ao RLS da tabela.
-
-> As variáveis `VITE_*` são embutidas no bundle durante o build. Ao alterá-las,
-> é preciso **rebuildar** o serviço `front`. Para um servidor estático mais robusto
-> em produção, considere `npx serve -s dist -l $PORT` no lugar de `vite preview`.
-
-Após o primeiro deploy: aponte `VITE_API_URL` (front e adm) para a URL do `back` e
-`CORS_ORIGINS` (back) para as URLs do `front` e do `adm`, e rebuilde os dois fronts.
+O painel manda `noindex, nofollow` no HTML, mas isso não é controle de acesso: a
+proteção real é o login do Supabase Auth somado ao RLS da tabela.

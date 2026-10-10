@@ -7,8 +7,4 @@ export default defineConfig({
   server: {
     port: 5174,
   },
-  // `vite preview` serve o build estático no Railway; libera o domínio gerado.
-  preview: {
-    allowedHosts: true,
-  },
 });
