@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__top">
           <div className="footer__brand">
-            <img src="/assets/logo-light.png" alt="Splendor O&M" className="footer__logo" />
+            <img src="/assets/logo-light.webp" alt="Splendor O&M" className="footer__logo" loading="lazy" />
             <p className="footer__desc">
               Operação e manutenção de usinas solares com tecnologia própria. Uma empresa do
               ecossistema Splendor Energia e MarchEng Engenharia.
@@ -28,8 +28,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer__bottom">
-          <span>Splendor O&M Ltda. · CNPJ 00.000.000/0001-00 · Cidade/SP</span>
-          <span>Política de privacidade</span>
+          <span>
+            Splendor O&M ·{" "}
+            <a href="https://wa.me/5517997377626" target="_blank" rel="noopener">
+              WhatsApp (17) 99737-7626
+            </a>
+          </span>
+          <a href="/privacidade.html">Política de privacidade</a>
         </div>
       </div>
     </footer>

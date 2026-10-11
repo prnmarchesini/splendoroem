@@ -9,7 +9,6 @@ import { postLead } from "../lib/api";
  *  - Nav: sombra ao rolar + menu mobile (burger).
  *  - Count-up animado dos números (com prefers-reduced-motion).
  *  - Reveal on-scroll por posição (com failsafe "snap").
- *  - Hero switcher A/B/C com persistência em localStorage ('splendorHero').
  *  - Formulário de diagnóstico: validação visual + POST real para /api/leads,
  *    mantendo a tela de sucesso do design.
  *
@@ -105,56 +104,6 @@ export function useSplendorInteractions(): void {
         }, ms),
       ),
     );
-
-    /* ---------- Hero switcher ---------- */
-    const heroswitch = document.getElementById("heroswitch");
-    const heroes = document.getElementById("heroes");
-    function updateNavTheme() {
-      const active = heroes?.querySelector<HTMLElement>("[data-hero].is-active");
-      nav?.classList.toggle("nav--ondark", !!active && active.dataset.hero === "b");
-    }
-    function setHero(go: string, persist: boolean) {
-      heroswitch?.querySelectorAll<HTMLElement>("button").forEach((b) =>
-        b.classList.toggle("active", b.dataset.go === go),
-      );
-      heroes?.querySelectorAll<HTMLElement>("[data-hero]").forEach((s) =>
-        s.classList.toggle("is-active", s.dataset.hero === go),
-      );
-      updateNavTheme();
-      if (persist) {
-        try {
-          localStorage.setItem("splendorHero", go);
-        } catch {
-          /* localStorage indisponível */
-        }
-      }
-      const active = heroes?.querySelector<HTMLElement>("[data-hero].is-active");
-      active?.querySelectorAll<HTMLElement>(".reveal").forEach((el) => el.classList.add("in"));
-      active?.querySelectorAll<HTMLElement>("[data-count]").forEach((el) => {
-        el.dataset.done = "";
-        countUp(el);
-      });
-      timeouts.push(window.setTimeout(snapStuck, 360));
-    }
-    heroswitch?.addEventListener(
-      "click",
-      (e) => {
-        const btn = (e.target as HTMLElement).closest<HTMLElement>("button[data-go]");
-        if (!btn) return;
-        setHero(btn.dataset.go || "b", true);
-        window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
-      },
-      { signal },
-    );
-    // restaura escolha (padrão: hero escuro)
-    let saved = "b";
-    try {
-      saved = localStorage.getItem("splendorHero") || "b";
-    } catch {
-      /* localStorage indisponível */
-    }
-    if (saved !== "b") setHero(saved, false);
-    else updateNavTheme();
 
     /* ---------- Formulário: validação visual + POST real ---------- */
     const form = document.getElementById("diagForm") as HTMLFormElement | null;

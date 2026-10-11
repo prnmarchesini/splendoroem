@@ -121,20 +121,24 @@ export default function Tecnologia() {
                 <div className="frame__addr">meuWatt · Análise Gráfica</div>
               </div>
               <img
-                src="/assets/print-analise.png"
+                src="/assets/print-analise.webp"
                 alt="Dashboard do meuWatt — potência por inversor"
                 className="frame__img pzoom"
-                data-full="/assets/print-analise.png"
+                loading="lazy"
+                decoding="async"
+                data-full="/assets/print-analise.webp"
               />
             </div>
             <div className="gallery">
               <figure>
                 <div className="frame">
                   <img
-                    src="/assets/print-estacao.png"
+                    src="/assets/print-estacao.webp"
                     alt="Estação meteorológica no meuWatt"
                     className="frame__img pzoom"
-                    data-full="/assets/print-estacao.png"
+                loading="lazy"
+                decoding="async"
+                    data-full="/assets/print-estacao.webp"
                   />
                 </div>
                 <figcaption>Estação meteorológica</figcaption>
@@ -142,10 +146,12 @@ export default function Tecnologia() {
               <figure>
                 <div className="frame">
                   <img
-                    src="/assets/print-rele.png"
+                    src="/assets/print-rele.webp"
                     alt="Relé de proteção no meuWatt"
                     className="frame__img pzoom"
-                    data-full="/assets/print-rele.png"
+                loading="lazy"
+                decoding="async"
+                    data-full="/assets/print-rele.webp"
                   />
                 </div>
                 <figcaption>Relé de proteção</figcaption>
@@ -153,10 +159,12 @@ export default function Tecnologia() {
               <figure>
                 <div className="frame">
                   <img
-                    src="/assets/print-ucs.png"
+                    src="/assets/print-ucs.webp"
                     alt="Disponibilidade por UC no meuWatt"
                     className="frame__img pzoom"
-                    data-full="/assets/print-ucs.png"
+                loading="lazy"
+                decoding="async"
+                    data-full="/assets/print-ucs.webp"
                   />
                 </div>
                 <figcaption>Disponibilidade por UC</figcaption>

@@ -1,0 +1,41 @@
+# Splendor O&M
+
+> Operação e manutenção (O&M) de usinas solares fotovoltaicas no Brasil, com tecnologia própria. A Splendor O&M une engenharia, construção e software: nasce da experiência da Splendor Energia (construção) e da MarchEng Engenharia (projetos e comissionamento). Contato: WhatsApp +55 17 99737-7626 (https://wa.me/5517997377626).
+
+## Números
+- Mais de 200 MW em projetos básicos e 50 MW em projetos executivos.
+- Mais de 50 MW comissionados e 30 MW construídos.
+- Mais de 20 MW de usinas em operação.
+- Atuação em projetos, comissionamento, due diligence e laudos técnicos com ART desde 2017.
+
+## Serviços
+- **Operação e monitoramento:** acompanhamento da usina da primeira à última hora de sol, todos os dias, com alertas automáticos 24h.
+- **Manutenção preventiva:** plano estruturado no meuPlano (inspeções, limpeza, reaperto, termografia e ensaios elétricos) com periodicidade definida e rastreabilidade.
+- **Manutenção corretiva:** diagnóstico remoto antes do deslocamento; o técnico chega com a peça certa.
+- **Diagnóstico técnico gratuito:** visita de inspeção com checklist visual completo, sem compromisso. Ensaios elétricos completos (curva I-V, resistência de isolamento, termografia) por valor simbólico na contratação do diagnóstico.
+- **Relatório mensal de engenharia:** geração, disponibilidade, ocorrências, ações executadas e pendências, com responsável técnico e ART.
+
+## Como a Splendor assume uma usina
+1. Diagnóstico técnico (visita de inspeção).
+2. Plano de operação e manutenção no meuPlano.
+3. Conexão ao meuWatt (inversores, rede e câmeras, com acesso remoto seguro via VPN).
+4. Operação contínua com alertas 24h.
+5. Relatório mensal de desempenho.
+
+## Plataformas próprias
+- **meuWatt (supervisório):** inversores de qualquer fabricante numa única tela; relés de proteção, medição da concessionária e estação solarimétrica em tempo real; status da rede de comunicação e das câmeras de segurança (CFTV); alarmes com escalonamento; análise de strings, paradas e desvio da média; parametrização remota de inversores e relés.
+- **meuPlano (gestão de ativos):** árvore de ativos da subestação ao módulo, ficha de cada equipamento, plano de manutenção e ordens de serviço, ensaios, termografia com histórico versionado, análise de instrumentos de campo e drone (ortomosaico RGB e térmico, modelo 3D, sombreamento, mesas e módulos por rede neural, laudo após análise humana).
+
+## Diferenciais frente ao O&M comum
+- Supervisório próprio multifabricante (não depende do portal do fabricante).
+- Gestão de ativo com histórico completo (em vez de planilha).
+- Monitoramento do status do CFTV, acesso remoto seguro via VPN e parametrização remota.
+- Responsável técnico com ART sempre.
+
+## Links
+- [Site](https://splendoroem.com.br/)
+- [Relatório de geração — executivo (PDF de exemplo)](https://splendoroem.com.br/assets/relatorios/geracao-executivo.pdf)
+- [Relatório de geração — técnico (PDF de exemplo)](https://splendoroem.com.br/assets/relatorios/geracao-tecnico.pdf)
+- [Relatório de paradas (PDF de exemplo)](https://splendoroem.com.br/assets/relatorios/paradas.pdf)
+- [Relatório de manutenção (PDF de exemplo)](https://splendoroem.com.br/assets/relatorios/manutencao.pdf)
+- [Política de privacidade](https://splendoroem.com.br/privacidade.html)

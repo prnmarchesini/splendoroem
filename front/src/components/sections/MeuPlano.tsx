@@ -56,14 +56,14 @@ const PANELS: Panel[] = [
     ],
     mainCap: "Ortomosaico RGB da usina",
     shots: [
-      { src: img("drone-ortomosaico.jpg"), cap: "Ortomosaico" },
-      { src: img("drone-rgb-termico.jpg"), cap: "Slide RGB ↔ térmico" },
-      { src: img("drone-termo1.jpg"), cap: "Análise termográfica" },
-      { src: img("drone-termo2.jpg"), cap: "Ponto quente identificado" },
-      { src: img("drone-mesas.jpg"), cap: "Mesas e módulos por rede neural" },
-      { src: img("drone-sombreamento.jpg"), cap: "Análise de sombreamento" },
-      { src: img("drone-3d.jpg"), cap: "Modelo 3D" },
-      { src: img("drone-terreno.jpg"), cap: "Perfil de terreno" },
+      { src: img("drone-ortomosaico.webp"), cap: "Ortomosaico" },
+      { src: img("drone-rgb-termico.webp"), cap: "Slide RGB ↔ térmico" },
+      { src: img("drone-termo1.webp"), cap: "Análise termográfica" },
+      { src: img("drone-termo2.webp"), cap: "Ponto quente identificado" },
+      { src: img("drone-mesas.webp"), cap: "Mesas e módulos por rede neural" },
+      { src: img("drone-sombreamento.webp"), cap: "Análise de sombreamento" },
+      { src: img("drone-3d.webp"), cap: "Modelo 3D" },
+      { src: img("drone-terreno.webp"), cap: "Perfil de terreno" },
     ],
   },
   {
@@ -85,10 +85,10 @@ const PANELS: Panel[] = [
     ],
     mainCap: "Ferramenta de análise termográfica (desktop)",
     shots: [
-      { src: img("termo-desktop.jpg"), cap: "Ferramenta desktop" },
-      { src: img("termo-desktop2.jpg"), cap: "Marcação de pontos quentes" },
-      { src: img("termo-analise.jpg"), cap: "Análise" },
-      { src: img("termo-registro.jpg"), cap: "Registro termográfico" },
+      { src: img("termo-desktop.webp"), cap: "Ferramenta desktop" },
+      { src: img("termo-desktop2.webp"), cap: "Marcação de pontos quentes" },
+      { src: img("termo-analise.webp"), cap: "Análise" },
+      { src: img("termo-registro.webp"), cap: "Registro termográfico" },
     ],
   },
   {
@@ -111,9 +111,9 @@ const PANELS: Panel[] = [
     ],
     mainCap: "Análise de isolação",
     shots: [
-      { src: img("instr-1.jpg"), cap: "Análise de isolação" },
-      { src: img("instr-2.jpg"), cap: "Medições sincronizadas" },
-      { src: img("instr-3.jpg"), cap: "Vínculo com o equipamento" },
+      { src: img("instr-1.webp"), cap: "Análise de isolação" },
+      { src: img("instr-2.webp"), cap: "Medições sincronizadas" },
+      { src: img("instr-3.webp"), cap: "Vínculo com o equipamento" },
     ],
   },
   {
@@ -147,14 +147,14 @@ const PANELS: Panel[] = [
     ],
     mainCap: "Árvore de ativos — UFV Porto Ferreira, 796 nós",
     shots: [
-      { src: img("arvore.jpg"), cap: "Árvore de ativos" },
-      { src: img("ficha.jpg"), cap: "Ficha do equipamento" },
-      { src: img("catalogo.jpg"), cap: "Catálogo de equipamentos" },
-      { src: img("tipos.jpg"), cap: "Tipos de equipamento" },
-      { src: img("diagrama-rede.jpg"), cap: "Diagrama de rede automático" },
-      { src: img("rastreio-rede.jpg"), cap: "Rastreio de conexões" },
-      { src: img("cadastro-usinas.jpg"), cap: "Cadastro de usinas" },
-      { src: img("cadastro-projetos.jpg"), cap: "Cadastro de projetos" },
+      { src: img("arvore.webp"), cap: "Árvore de ativos" },
+      { src: img("ficha.webp"), cap: "Ficha do equipamento" },
+      { src: img("catalogo.webp"), cap: "Catálogo de equipamentos" },
+      { src: img("tipos.webp"), cap: "Tipos de equipamento" },
+      { src: img("diagrama-rede.webp"), cap: "Diagrama de rede automático" },
+      { src: img("rastreio-rede.webp"), cap: "Rastreio de conexões" },
+      { src: img("cadastro-usinas.webp"), cap: "Cadastro de usinas" },
+      { src: img("cadastro-projetos.webp"), cap: "Cadastro de projetos" },
     ],
   },
   {
@@ -188,13 +188,13 @@ const PANELS: Panel[] = [
     ],
     mainCap: "Planejamento anual de manutenção",
     shots: [
-      { src: img("planejamento-anual.jpg"), cap: "Planejamento anual" },
-      { src: img("cronograma.jpg"), cap: "Cronograma por mês" },
-      { src: img("pendencias.jpg"), cap: "Acompanhamento de pendências" },
-      { src: img("ensaios.jpg"), cap: "Cadastro de ensaios" },
-      { src: img("garantia.jpg"), cap: "Funil de garantia" },
-      { src: img("spare-parts.jpg"), cap: "Controle de spare parts" },
-      { src: img("app-campo.jpg"), cap: "App do técnico em campo" },
+      { src: img("planejamento-anual.webp"), cap: "Planejamento anual" },
+      { src: img("cronograma.webp"), cap: "Cronograma por mês" },
+      { src: img("pendencias.webp"), cap: "Acompanhamento de pendências" },
+      { src: img("ensaios.webp"), cap: "Cadastro de ensaios" },
+      { src: img("garantia.webp"), cap: "Funil de garantia" },
+      { src: img("spare-parts.webp"), cap: "Controle de spare parts" },
+      { src: img("app-campo.webp"), cap: "App do técnico em campo" },
     ],
   },
 ];
@@ -222,6 +222,8 @@ function Pshots({ panel }: { panel: Panel }) {
             src={shot.src}
             alt={cap}
             className="frame__img pzoom"
+                loading="lazy"
+                decoding="async"
             data-full={shot.src}
             onLoad={(e) => {
               const el = e.currentTarget;

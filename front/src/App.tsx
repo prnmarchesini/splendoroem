@@ -13,7 +13,6 @@ import QuemSomos from "./components/sections/QuemSomos";
 import CtaFinal from "./components/sections/CtaFinal";
 import Footer from "./components/Footer";
 import WhatsappFloat from "./components/WhatsappFloat";
-import HeroSwitch from "./components/HeroSwitch";
 import Lightbox from "./components/Lightbox";
 
 export default function App() {
@@ -38,7 +37,6 @@ export default function App() {
       <Lightbox />
       <Footer />
       <WhatsappFloat />
-      <HeroSwitch />
     </>
   );
 }

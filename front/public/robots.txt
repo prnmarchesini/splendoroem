@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://splendoroem.com.br/sitemap.xml
