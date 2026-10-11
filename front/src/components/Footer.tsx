@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
         <div className="footer__bottom">
           <span>
-            Splendor O&M ·{" "}
+            Splendor O&M Ltda. · CNPJ 60.096.696/0001-23 · Bertioga/SP ·{" "}
             <a href="https://wa.me/5517997377626" target="_blank" rel="noopener">
               WhatsApp (17) 99737-7626
             </a>
