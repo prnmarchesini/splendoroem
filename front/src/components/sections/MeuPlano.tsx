@@ -36,7 +36,8 @@ const PANELS: Panel[] = [
         <b>Análise de sombreamento.</b>
       </>,
       <>
-        <b>Análise térmica</b> com comparação fácil entre foto térmica e RGB.
+        <b>Termografia aérea</b> da usina inteira: cortina RGB ↔ térmica, temperatura no cursor
+        e comparação entre voos para achar módulo, string ou conexão aquecendo.
       </>,
       <>
         <b>Rede neural treinada</b> para geração automática das mesas e numeração dos módulos.
@@ -54,8 +55,9 @@ const PANELS: Panel[] = [
         automática de anomalias.
       </>,
     ],
-    mainCap: "Ortomosaico RGB da usina",
+    mainCap: "Termografia aérea: cortina RGB ↔ térmica sobre o ortomosaico, escala de 28 a 65 °C",
     shots: [
+      { src: img("drone-termografia.webp"), cap: "Termografia aérea" },
       { src: img("drone-ortomosaico.webp"), cap: "Ortomosaico" },
       { src: img("drone-rgb-termico.webp"), cap: "Slide RGB ↔ térmico" },
       { src: img("drone-termo1.webp"), cap: "Análise termográfica" },
